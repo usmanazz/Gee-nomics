@@ -1,0 +1,6 @@
+>NZ_NDWV01000100.1 Halorubrum chaoviator strain DSM 19316 NODE_100_length_1288_cov_24.6296, whole genome shotgun sequence
+CATCCGGATCC
+TAATCCCG
+>NZ_NDWV01000001.1 Halorubrum chaoviator strain DSM 19316 NODE_1_length_435375_cov_13.1556, whole genome shotgun sequence
+CGCGTAAGTCCGGCGGCGG
+AACGTGCCTCTGGTC

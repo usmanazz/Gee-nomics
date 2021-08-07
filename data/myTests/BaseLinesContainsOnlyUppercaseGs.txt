@@ -1,0 +1,6 @@
+>Caenorhabditis elegans
+GGGGG
+G
+>Test
+G
+G

@@ -1,0 +1,5 @@
+>TestName
+AGTTTTTAGCN
+TGCNNNNNNN
+>
+ATG

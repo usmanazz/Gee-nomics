@@ -1,0 +1,4 @@
+>Caenorhabditis elegans
+AAGA
+TGtT
+GGCaaaaa

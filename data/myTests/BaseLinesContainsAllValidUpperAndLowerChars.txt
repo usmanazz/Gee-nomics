@@ -1,0 +1,13 @@
+>Caenorhabditis elegans
+atGcnatgctaAtacTcaN
+ctgtAgcTc
+ncgtagct
+ATGTCGAAAATGCTGCTAGCTTCAGgatcgn
+>Test1
+CCCCCATGCTcgggatcgn
+>Test2
+NATTTGANCGTAAGCCGATCGNAGCT
+GagtcgacagtacgNAGTCG
+Tagctgagc
+>Test3
+gtagctnaNAGTCGAN
