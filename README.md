@@ -92,7 +92,6 @@ Maintains a library of Genome objects and allows the user of the class to:
 When you run the program, it might look like this:
 
 ```
-28
 Welcome to the Gee-nomics test harness!
 The genome library is initially empty, with
 Commands:
