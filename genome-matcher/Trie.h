@@ -62,7 +62,7 @@ Trie<ValueType>::~Trie(){
 }
 
 
-// Function that deletes the entire trie structure and allocates a new empty
+// Method to delete the entire trie structure and allocate a new empty
 // trie with a root node
 template<typename ValueType>
 void Trie<ValueType>::reset(){
@@ -100,8 +100,6 @@ void Trie<ValueType>::insert(const std::string& key, const ValueType& value){
         bool foundChar = false;
         
         for(int j=0; j<n->children.size(); j++){
-            // if the current char == the current label, then continue on the path
-            // in the trie structure
             if(ch == n->labels[j]){
                 foundChar = true;
                 n = n->children[j];
@@ -109,7 +107,7 @@ void Trie<ValueType>::insert(const std::string& key, const ValueType& value){
             }
         }
         
-        // if didnt find current char, create new Node, add appropriate label
+        // didnt find current char so create new Node, add appropriate label
         // and point to the new child
         if(!foundChar){
             n->labels.push_back(ch);
@@ -117,7 +115,7 @@ void Trie<ValueType>::insert(const std::string& key, const ValueType& value){
             n = n->children.back();
         }
         
-        // if reached end of the key, add value to the list of values at current node
+        // add value to the list of values at current node
         if(i == key.size()-1){
             n->values.push_back(value);
         }
@@ -127,8 +125,6 @@ void Trie<ValueType>::insert(const std::string& key, const ValueType& value){
 // Searches for the values associated with a given string.
 // If exactMatchOnly is true, returns the values associated with the exact key specified.
 // If false, returns values associated with exact key and any SNiPs.
-// (SNiPs are sequences where matches the first char of the searched for key exactly and
-// having a single mismatch char of the specified key anywhere past the first char)
 template<typename ValueType>
 std::vector<ValueType> Trie<ValueType>::find(const std::string& key, bool exactMatchOnly) const{
    
@@ -154,7 +150,6 @@ std::vector<ValueType> Trie<ValueType>::find(const std::string& key, bool exactM
            replacedChar = key.substr(1+i);
        }
    }
-    // find values when exactMatchOnly == true
    findMatch(root, key, searchResult);
    return searchResult;
 }
